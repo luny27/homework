@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="js/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick-theme.css"/>
+
     <title>Markup</title>
 </head>
 <body>
@@ -26,43 +29,13 @@
             </div>
         </div>
     </header>
-    <div class="all">
-		<input checked type="radio" name="respond" id="desktop">
-			<article id="slider">
-					<input checked type="radio" name="slider" id="switch1">
-					<input type="radio" name="slider" id="switch2">
-					<input type="radio" name="slider" id="switch3">
-					<input type="radio" name="slider" id="switch4">
-					<input type="radio" name="slider" id="switch5">
-				<div id="slides">
-					<div id="overflow">
-                        <span class="nadpis1">Front-End</span>
-                        <span class="nadpis">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, ratione?</span>
-						<div class="image">
-							<article><img src="./img/slider-image-blurry.jpg"></article>
-							<article><img src="./img/slider-image-blurry.jpg"></article>
-							<article><img src="./img/slider-image-blurry.jpg"></article>
-							<article><img src="./img/slider-image-blurry.jpg"></article>
-							<article><img src="./img/slider-image-blurry.jpg"></article>
-						</div>
-					</div>
-				</div>
-				<div id="controls">
-					<label for="switch1"></label>
-					<label for="switch2"></label>
-					<label for="switch3"></label>
-					<label for="switch4"></label>
-					<label for="switch5"></label>
-				</div>
-				<div id="active">
-					<label for="switch1"></label>
-					<label for="switch2"></label>
-					<label for="switch3"></label>
-					<label for="switch4"></label>
-					<label for="switch5"></label>
-				</div>
-			</article>
-	</div>
+    <section class="sliderbox">
+    <div class="slider">
+        <div class="slideritem"><img src="./img/slider-image-blurry.jpg" alt=""><h2 class="title">Front-end</h2><p class="TextSlider TextSlider1">Lorem ipsum dolor sit amet.</p></div>
+        <div class="slideritem"><img src="./img/slider-image-blurry.jpg" alt=""><h2 class="title">back-end</h2><p class="TextSlider TextSlider2">Lorem ipsum dolor sit amet consectetur.</p></div>
+        <div class="slideritem"><img src="./img/slider-image-blurry.jpg" alt=""><h2 class="title">full-stack</h2><p class="TextSlider TextSlider3">Lorem ipsum dolor sit, amet consectetur adipisicing.</p></div>
+      </div>
+    </section>
     <section class="container">
         <div class="content articles-container">
             <main class="articles">
@@ -127,13 +100,13 @@
 
             </main>
             <aside class="sidebar">
+                <h1>Follow us</h1>
                 <div class="social">
-                    <h1>Follow us</h1>
-                    <span><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></span>
-                    <span><a href=""><i class="fa fa-instagram" aria-hidden="true"></a></i></span>
-                    <span><a href=""><i class="fa fa-google" aria-hidden="true"></a></i></span>
-                    <span><a href=""><i class="fa fa-twitch" aria-hidden="true"></a></i></span>
-                    <span><a href=""><i class="fa fa-vk" aria-hidden="true"></a></i></span>
+                    <a href="" class="link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="" class="link"><i class="fa fa-instagram" aria-hidden="true"></a></i>
+                    <a href="" class="link"><i class="fa fa-google" aria-hidden="true"></a></i>
+                    <a href="" class="link"><i class="fa fa-twitch" aria-hidden="true"></a></i>
+                    <a href="" class="link"><i class="fa fa-vk" aria-hidden="true"></a></i>
                 </div>
                 <div class="comments">
                         <h1 class="comment1">Recent comments</h1>
@@ -174,5 +147,11 @@
             </div>
         </div>
 </footer>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
