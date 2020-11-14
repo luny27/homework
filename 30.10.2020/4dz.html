@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>анкета</title>
+  </head>
+  <body>
+    <header><h1>анкета</h1></header>
+    
+ <label for="login"> Логин </label> <br />
+  <input name="login" type="text" size="25" maxlength="30" placeholder="Введите имя" /> <br />
+ 
+  <label for="pd">Пароль:</label> <br />
+  <input name="pd" type="password" size="25" maxlength="30" minlength="6" placeholder="Password" /> <br />
+  
+ <label for="Email">Email</label>
+   <br />  <input type="email" name="Email" id="Email">
+  <br />
+  <input name="remember" type="checkbox" value="yes" /> Запомнить <br />
+  <input type="submit" name="enter" value="Вход" />
+  <input type="reset" value="Сброс">
+<p></p>
+ <label for="Radio">Пол:</label>
+  <input type="radio" name="Sex" value="Мужской" /> Мужской
+  <input type="radio" name="Sex" value="Женский" /> Женский
+</p>
+
+    
+    <label for="age">Возраст: </label>
+    <input type="number" step="1" min="1" max="100" value="10" id="age" name="age"/>
+
+
+    <p><b><label for="Checkbox">Семейное положение</label></b></p>
+    <p><input type="checkbox" name="option1" value="a1">Женат <Br>
+    <input type="checkbox" name="option2" value="a2">Не женат<Br>
+    <input type="checkbox" name="option3" value="a3">Был в браке<Br> 
+    <input type="checkbox" name="option4" value="a4">Есть подруга<Br> 
+<br />
+
+    <br> <label for="telephone">Телефон:</label>
+    <input type="tel" name="telephone" id="telephone"> <br />
+
+    <br><label for="Menu">Город: </label>
+    <select name="menu" size="1">
+      <option value="first">Харьков</option>
+      <option selected="selected" value="second">Киев</option>
+      <option value="third">Донецк</option>
+      <option value="fourth">Львов</option>
+      </select> <br />
+
+ <p>
+   <label for="Comment"> Коментарий:</label>
+   <textarea name="Comment" id="Com" cols="30" rows="10"></textarea></p>
+   <input type="submit" id="submit" value="Отправить">
+   
+  </body>
+</html>

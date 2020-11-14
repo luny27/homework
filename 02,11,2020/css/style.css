@@ -1,0 +1,254 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.H1 {
+	text-align: center;
+	color:rgb(32, 167, 27);
+	font-style: Normal;
+	text-shadow: 1px 1px 1px #000;
+	font-size: 30px;
+	font-weight: 700;
+
+}
+
+/* ДЛЯ 1 ДЗ */
+
+
+
+
+.main-menu {
+	list-style: none;
+	margin: 40px 0 5px;
+	padding: 25px 0 5px;
+	text-align: center;
+	background: white;
+  }
+
+  .main-menu li {display: inline-block;}
+.main-menu li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+
+  .main-menu li:last-child:after {content: none;}
+.main-menu a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s ;
+}
+
+.main-menu a , .main-menu a:visited {color: #9d999d;}
+.main-menu a.current, .main-menu a:hover{color: #feb386;}
+.main-menu a:before,
+.main-menu a:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #feb386;
+    transition: width .3s ease-in-out;
+}
+
+.main-menu a:hover:after,
+.main-menu a:focus:after {
+    width: 100%;
+}
+/*ДЛЯ ДЗ 2 */ 
+
+
+.border li:nth-child(1) {
+	font-weight: 700;
+	font-size: 22px;
+
+}
+
+.border li:nth-child(2) {
+      color: rgb(190, 185, 185); /* Цвет текста */ 
+      background-color: #000; /* Цвет фона */ 
+      font-size: 14px; /* Размер шрифта */ 
+      padding: 1px; /* Поля вокруг текста */ 
+}
+.border li:nth-child(3) {
+	border-bottom-width: 2px; /* Толщина линии внизу */
+	border-bottom-style: solid;
+}
+
+	.border li:last-child:after {content: none;}
+.border a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+
+.border a, .border a:visited {color: #444;}
+.border a.current, .border a:hover{color: #999;}
+
+.border a {
+    line-height: 1;
+    display: inline-block;
+    color:#999;
+    text-decoration:none;
+    cursor: pointer;
+}
+.border a:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #999;
+    transition: width .3s ease-in-out;
+}
+.border a:hover:after,
+.border a:focus:after {
+    width: 100%;
+}
+
+/* для дз 4*/
+
+.Article {
+	font-size: 30px;
+	font-style: normal;
+	text-align: center;
+
+
+}
+
+main p {
+	text-align: left;
+	font-size: 16;
+	color: rgb(124, 124, 29);
+
+}
+
+.img {
+	width: 100px;
+	height: 100px;
+    float:left; /* Выравнивание по левому краю */
+	margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+}
+
+
+/*ZaDANIE 5*/
+tr:nth-child(even) {background: #C9E3FE}
+th {background: #4a4f53}
+
+th:last-child, td:last-child {
+	text-align: right;
+}
+
+td:nth-child(3), th:nth-child(3) {
+	text-align: center;
+}
+
+td:nth-child(4), th:nth-child(4) {
+	text-align: center;
+}
+
+.table {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  width: 640px;
+  text-align: left;
+  border-collapse: collapse;
+  margin: 10px;
+  border: 1px solid #000000;
+}
+
+.table td {
+	
+	border: 1px solid #000000;
+	padding: 12px 17px;
+}
+
+/* для дз 3*/
+
+.avatar {
+border-radius: 50%;
+float: left;
+margin: 7px;
+}
+
+main section p {
+	text-align: left;
+  font-size: 16;
+  font-weight: 700;
+  color: rgb(32, 32, 15);
+  text-indent: 1.5em;
+  margin-top: 2;
+}
+header h1  {
+  font-size: 36px;
+  text-align: center;
+  margin: 7px;
+  color: red;
+}
+
+body header + main section article {
+  text-shadow: 1px 1px 1px #000;
+  margin-left: 10px;
+  font-size: 22;
+
+}
+
+body header + main + footer {
+  font-style: italic;
+  color:rgb(50, 4, 71);
+  font-size: 18;
+}
+
+main section p:first-letter {
+  color: red;
+}

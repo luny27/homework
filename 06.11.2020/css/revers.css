@@ -1,0 +1,149 @@
+.main-menu {
+	list-style: none;
+	margin: 10px 0 5px;
+	padding: 5px 0 5px;
+	text-align: center;
+	background: white;
+  }
+
+  .main-menu li {display: inline-block;}
+.main-menu li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+
+  .main-menu li:last-child:after {content: none;}
+.main-menu a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s ;
+}
+
+.main-menu a , .main-menu a:visited {color: #9d999d;}
+.main-menu a.current, .main-menu a:hover{color: #feb386;}
+.main-menu a:before,
+.main-menu a:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: #feb386;
+    transition: width .3s ease-in-out;
+}
+
+.main-menu a:hover:after,
+.main-menu a:focus:after {
+    width: 100%;
+}
+
+
+
+body, p{
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.img{
+    width: 100%;
+    margin: 0 auto 20px;
+}
+img{
+    width: 100%;
+}
+.wrapper{
+    width: 100%;
+    max-width: 768px;
+    margin: 50px auto 0;
+    border: 1px solid #eee;
+    padding: 40px;
+        -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.right,
+.left,
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    padding: 10px;
+    margin: 10px;
+    background: #EEEEEE;
+}
+
+.main{
+    margin: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+@media screen and (max-width: 768px) {
+    .right{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .left{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 415px) {
+    .top{
+        flex-direction: column;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
