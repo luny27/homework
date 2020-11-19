@@ -36,7 +36,7 @@
 /*4.Создайте переменные x и y для хранения числа. Значения переменные получают из prompt. Рассчитайте произведение, частное, разность и сумму этих значений. Результат последовательно отобразите в модальном окне. (Процесс вычисления посмотрите в debugger.)
 */
 
-// const choice = prompt('Що ви хочете робити з числами? введіть символ → +, -, *, /', '+');
+// const choice = prompt('что ты хочешь сделать с числом → +, -, *, /', '+');
 //     let x = prompt('enret number');
 //     let y = prompt('enret number');
     
@@ -56,13 +56,13 @@
    
 //     }
 //     else{
-//       alert('Ти не ввів правильний символ');
+//       alert('Ты не ввел символ');
 //     }
 
 //     $(function(){
 //       $('#exampleModal').arcticmodal();
 //   });
-// const choice = prompt('Що ви хочете робити з числами? введіть символ → +, -, *, /', '+');
+// const choice = prompt('Что ты хочешь сделать? введи символ → +, -, *, /', '+');
 //     let x = prompt('enret number');
 //     let y = prompt('enret number');
     
@@ -79,7 +79,7 @@
 //       const degree = alert('Degree is ' + (+x / +y));
 //     }
 //     else{
-//       alert('Ти не ввів правильний символ');
+//       alert('Ты не ввел правильный символ');
 //     }
 
 /*5.Космический корабль летит с Земли на Луну. Расстояние равно 384,400 км. Скорость полета корабля определяется в prompt. Рассчитайте, за какое время ваш космический корабль доберется до Луны.
@@ -101,7 +101,7 @@
 //       alert(number + ' четное');
 //     }
 
-// let number = prompt('введіть ціле число', '1');//5
+// let number = prompt('введите целое число', '1');//5
 //     let phrase = '';
     
 //     if(number % 2 == 0){
@@ -114,7 +114,7 @@
 
 /*7.Напишите программу, которая проверяет (true/false), является ли значение, введенное пользователем, числом. 
 
-let value = prompt('введіть якесь значення');
+let value = prompt('введите значение');
     let phrase = ''
 
     if(isNaN(+value)){
@@ -146,7 +146,7 @@ let value = prompt('введіть якесь значення');
 
 /*11 level up */
 
-// let number = Math.random() * 100, x = Math.round(number), y = +prompt('введіть якесь число', "2"), text3 = '';
+// let number = Math.random() * 100, x = Math.round(number), y = +prompt('введите какое-то число', "2"), text3 = '';
 //     alert(((y - x) > 0 ) ? text3 = 'x < y = true' + '; x =' + x + '; y =' + y + ';' : text3 = 'x < y = false' + '; x =' + x + '; y =' + y + ';');
 
 
@@ -155,18 +155,18 @@ let value = prompt('введіть якесь значення');
 // let number = Math.random() * 100;
 //     let x = Math.round(number);
     
-//     let y = +prompt('введіть якесь число', "2");
+//     let y = +prompt('введите какое-то число', "2");
 
 //     console.log(x);
 //     console.log(y);
 //     let text3 = '';
 
 //     if((y - x) > 0 ){
-//       console.log("Друге число більше");
+//       console.log("второе число больше");
 //       text3 = 'x < y = true' + '; x =' + x + '; y =' + y + ';';
 //     }
 //     else{
-//       console.log("Перше число більше");
+//       console.log("Первое число больше");
 //       text3 = 'x < y = false' + '; x =' + x + '; y =' + y + ';';
 //     }
 //     alert(text3);
